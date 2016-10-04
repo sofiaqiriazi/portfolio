@@ -1,0 +1,174 @@
+/*
+* multi-line comment
+*/
+p{ line-height: 1em; }
+h1, h2, h3, h4{
+    color: orange;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin: 0 0 0 0;
+}
+h1{ font-size: 2.3em; }
+h2{ font-size: 1.5em; }
+a{
+	color: black;
+	text-decoration: none;
+}
+	a:hover,
+	a:active{ text-decoration: underline; }
+
+/* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
+
+body{
+    font-family: "HelveticaNeue-Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+	font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
+}
+/* you can put your code all in one line like above */
+#page{ margin: 0px; 
+	height:100%;
+	}
+
+/* or on different lines like below */
+#logo{
+	margin-top: 0px;
+	display: inline-block;
+	float:right;
+	background:#E8E8E8;
+	height: 100%;
+}
+#logoLink{
+	margin-top: 0px;
+	color:black;
+	background: #E8E8E8;
+	float:right;
+
+}
+/* but try and be as concise as possible */
+
+#banner{
+	position: absolute;
+	top:0%;
+	left:0px;
+	width: 100%;
+	margin: 0px 0;
+	background: #E8E8E8;
+	padding: 0px;
+	height:5%;
+
+}
+#content{ 
+	position: absolute;
+	top:5%;
+	left:0px;
+	width: 100%;
+	margin: 0px 0;
+	background: white;
+	padding: 0px;
+	height:90%;
+}
+#footer{
+	top:95%;
+	left:0px;
+	position: absolute;
+	border-bottom: 0px #ccc solid;
+	height:5%;
+	width:100%;
+}
+	#footer p{
+		width: 100%;
+		text-align: right;
+		text-transform: uppercase;
+		font-size: 80%;
+		color: grey;
+	}
+
+/* multiple styles seperated by a , */
+#content,
+ul li a{ box-shadow: 0px 0px 0px #999; }
+
+#NW { 
+	top:0%;   
+	left:0px;   
+	background:#C5C1C0; 
+	width:50%; 
+	height:50%;
+	color:white;
+    position:absolute;
+    text-align:center;
+    opacity:0.5;
+    
+}
+#NE { 
+	top:0%;   
+	left:50%; 
+	background:#414141;
+	position:fixed; 
+	width:50%; 
+	height:50%; 
+	color:white;
+    position:absolute;
+    text-align:center;
+    
+}
+#SW { 
+	top:50%; 
+	left:0px;   
+	background:#414141;
+	position:fixed; 
+	width:50%; 
+	height:50%;
+	color:white;
+    position:absolute;
+    text-align:center;
+    
+}
+#SE { 
+	top:50%; 
+	left:50%; 
+	background:#C5C1C0;
+	position:fixed; 
+	width:50%; 
+	height:50%;
+	color:white;
+    position:absolute;
+    text-align:center;
+}
+.boxes{
+display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+opacity: 0.5;
+}
+.boxes h1 {
+	display: inline-block;
+  	vertical-align: middle;
+  	line-height: normal;  
+  	color:black;
+    font-size:7.3em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#NW:hover{
+	opacity:1.0;
+}
+#NE:hover{
+	opacity:1.0;
+}
+#SW:hover{
+	opacity:1.0;
+}
+#SE:hover{
+	opacity:1.0;
+}
+
+img {
+	width:45px;
+	height:45px;
+}
+
+#links{
+	padding-left: 10px;
+	float: left;
+}
