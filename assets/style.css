@@ -35,13 +35,14 @@ p {
 }
 
 a {
-  color: #00aaee;
+  color: #3CC47C;
   text-decoration: none;
 }
 
 a:hover {
-  color: #0077a2;
-  text-decoration: underline;
+  color: #3CC47C;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 .hide {
