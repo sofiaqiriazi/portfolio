@@ -161,7 +161,7 @@
     }
     
     .main section.page1 {
-      background:#D5D5D5;
+      background:#D5D5D5 no-repeat 0px;
     }
     .main section.page1 h1 {
       float: none;
@@ -317,11 +317,3 @@
       letter-spacing: 1px;
       font-size: 14px;
     }
-
-.img-circular{
- width: 200px;
- height: 200px;
- background-image: url('../img/ut.jpg');
- background-size: cover;
- display: block;
-}

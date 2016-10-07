@@ -3,7 +3,7 @@ $(function () {
     	loop:true,
     	in: {
     		effect: 'fadeIn',
-		    delayScale: 4.0,
+		    delayScale: 2.0,
 		    delay: 50,
 		    sync: false,
 		    shuffle: false,
