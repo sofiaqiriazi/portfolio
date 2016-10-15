@@ -1,14 +1,14 @@
 /*
 * multi-line comment
 */
-p{ line-height: 1em; }
+p{ line-height: 3em; }
 h1, h2, h3, h4{
     color: #f4f4f4;
 	font-weight: normal;
 	line-height: 1.1em;
 	margin: 0 0 0 0;
 }
-h1{ font-size: 2.3em; }
+h1{ font-size: 2.0em; }
 h2{ font-size: 1.5em; }
 a{
 	color: #f4f4f4;
@@ -18,43 +18,41 @@ a{
 	a:hover,
 	a:active{ text-decoration: underline; }
 
-/* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
 
 body{
-    font-family: "HelveticaNeue-Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-family: "Avenir Next","HelveticaNeue-Light", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
 	font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
 }
 /* you can put your code all in one line like above */
 #page{ margin: 0px; 
-	height:100%;
+	height:920px;
 	}
 
 /* or on different lines like below */
 #logo{
-	margin-top: 0px;
+	margin-top: 10px;
 	display: inline-block;
 	float:right;
-	height: 100%;
+	height: 75%;
 }
 #logoLink{
 	margin-right: 30px;
 	color:#3CC47C;
 	float:right;
-	font-weight: 400;
-	font-size:120%;
+	font-weight: 200;
+	font-size:100%;
 }
 /* but try and be as concise as possible */
 
 #banner{
-	position: absolute;
+	position: relative;
 	top:0%;
 	left:0px;
 	width: 100%;
 	margin: 0px 0;
-	background: #373737;
-	padding: 0px;
-	height:5%;
+	background: #262228;
+	height: 50px;
 
 }
 #content{ 
@@ -74,7 +72,7 @@ body{
 	border-bottom: 0px #ccc solid;
 	height:5%;
 	width:100%;
-	background-color: black;
+	background-color: #262228;
 }
 	#footer p{
 		width: 100%;
@@ -90,19 +88,17 @@ ul li a{ box-shadow: 0px 0px 0px #999; }
 
 #NW { 
 	top:0%;   
-	left:0px;   
-	background:#373737; 
+	left:0px; 
+	position:fixed; 
 	width:50%; 
 	height:50%;
 	color:white;
     position:absolute;
     text-align:center;
-    
 }
 #NE { 
 	top:0%;   
 	left:50%; 
-	background:black;
 	position:fixed; 
 	width:50%; 
 	height:50%; 
@@ -114,7 +110,6 @@ ul li a{ box-shadow: 0px 0px 0px #999; }
 #SW { 
 	top:50%; 
 	left:0px;   
-	background:black;
 	position:fixed; 
 	width:50%; 
 	height:50%;
@@ -126,44 +121,35 @@ ul li a{ box-shadow: 0px 0px 0px #999; }
 #SE { 
 	top:50%; 
 	left:50%; 
-	background:#373737;
 	position:fixed; 
 	width:50%; 
 	height:50%;
 	color:white;
     position:absolute;
     text-align:center;
+    align-items: center;
 }
 .boxes{
-display: flex;
-justify-content: center; /* align horizontal */
-align-items: center; /* align vertical */
-opacity: 0.9;
+	background: white;
 }
-.boxes h1 {
+.tlt {
+	height:50%;
+	width:100%;
 	display: inline-block;
-  	vertical-align: middle;
   	line-height: normal;  
   	color:#3CC47C;
-    font-size:7.3em;
+    font-size:4.5em;
+    line-height: 200%;
     font-weight: bolder;
     text-transform: uppercase;
 }
 
-#NW:hover{
-	opacity:1.0;
-}
-#NE:hover{
-	opacity:1.0;
-}
-#SW:hover{
-	opacity:1.0;
-}
-#SE:hover{
-	opacity:1.0;
+.boxes:hover{
+	background: #262228;
 }
 
 img {
+	margin-top: 2px;
 	width:45px;
 	height:45px;
 }
@@ -172,3 +158,58 @@ img {
 	padding-left: 10px;
 	float: left;
 }
+
+.column {
+	top:50%;
+	left:0;
+	align-items: center;
+	width:100%;
+	height:50%;
+	display: inline-block; 
+  	color:#3CC47C;
+    font-weight: bolder;
+    text-transform: uppercase;
+    bottom: 0;
+    position:absolute;
+}
+
+.boxes .column div {
+	position: relative;
+	display: inline-block;
+	width: 175px;
+	height: 175px;
+	margin: 0 0 0 5px;
+	padding: 0;
+}
+
+figure {
+	width: 175px;
+	height: 175px;
+	margin: 0;
+	padding: 0;
+	background: background: #1abc9c;
+	overflow: hidden;
+}
+figure img {
+	width:175px;
+	height:175px;
+}
+figure:hover+span {
+	bottom: 0px;
+	opacity: 1;
+}
+
+
+/* Zoom In #2 */
+.hover02 figure img {
+	margin-top:0px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover02 figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
