@@ -20,7 +20,7 @@ a{
 
 
 body{
-    font-family: "Avenir Next","HelveticaNeue-Light", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
 	font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
 }
@@ -41,7 +41,7 @@ body{
 	color:#3CC47C;
 	float:right;
 	font-weight: 200;
-	font-size:100%;
+	font-size: 75%;
 }
 /* but try and be as concise as possible */
 
@@ -51,7 +51,7 @@ body{
 	left:0px;
 	width: 100%;
 	margin: 0px 0;
-	background: #262228;
+	background: #0e0b16;
 	height: 50px;
 
 }
@@ -72,7 +72,7 @@ body{
 	border-bottom: 0px #ccc solid;
 	height:5%;
 	width:100%;
-	background-color: #262228;
+	background-color: #0e0b16;
 }
 	#footer p{
 		width: 100%;
@@ -87,43 +87,43 @@ body{
 ul li a{ box-shadow: 0px 0px 0px #999; }
 
 #NW { 
-	top:0%;   
-	left:0px; 
+	top:1%;   
+	left:1%; 
 	position:fixed; 
-	width:50%; 
-	height:50%;
+	width:48.5%; 
+	height:48.5%;
 	color:white;
     position:absolute;
     text-align:center;
 }
 #NE { 
-	top:0%;   
-	left:50%; 
+	top:1%;   
+	left:50.5%; 
 	position:fixed; 
-	width:50%; 
-	height:50%; 
+	width:48.5%; 
+	height:48.5%; 
 	color:white;
     position:absolute;
     text-align:center;
     
 }
 #SW { 
-	top:50%; 
-	left:0px;   
+	top:50.5%; 
+	left:1%;   
 	position:fixed; 
-	width:50%; 
-	height:50%;
+	width:48.5%; 
+	height:48.5%;
 	color:white;
     position:absolute;
     text-align:center;
     
 }
 #SE { 
-	top:50%; 
-	left:50%; 
+	top:50.5%; 
+	left:50.5%; 
 	position:fixed; 
-	width:50%; 
-	height:50%;
+	width:48.5%; 
+	height:48.5%;
 	color:white;
     position:absolute;
     text-align:center;
@@ -131,21 +131,26 @@ ul li a{ box-shadow: 0px 0px 0px #999; }
 }
 .boxes{
 	background: white;
+		-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
 }
 .tlt {
-	height:50%;
+	height:30%;
 	width:100%;
 	display: inline-block;
   	line-height: normal;  
   	color:#3CC47C;
-    font-size:4.5em;
-    line-height: 200%;
+    font-size:3.5em;
+    line-height: 300%;
     font-weight: bolder;
     text-transform: uppercase;
 }
 
 .boxes:hover{
-	background: #262228;
+	background: #0e0b16;
+}
+.boxes:hover+span{
+	font-weight: 90;
 }
 
 img {
@@ -160,11 +165,11 @@ img {
 }
 
 .column {
-	top:50%;
+	top:30%;
 	left:0;
 	align-items: center;
 	width:100%;
-	height:50%;
+	height:70%;
 	display: inline-block; 
   	color:#3CC47C;
     font-weight: bolder;
@@ -173,38 +178,79 @@ img {
     position:absolute;
 }
 
+
+
+#contact div{
+	position:relative;
+	display: inline-block;
+	height:50px;
+	width:50px;
+	margin: 0 0 0 17px;
+	padding:0;
+}
+
+#contact div:first-child{
+	margin:0px;
+}
 .boxes .column div {
 	position: relative;
 	display: inline-block;
-	width: 175px;
-	height: 175px;
-	margin: 0 0 0 5px;
+	width: 227px;
+	height: 227px;
+	margin: 0 0 0 17px;
 	padding: 0;
+}
+.boxes .column div span{
+	color:white;
+	font-weight: lighter;
 }
 
 figure {
-	width: 175px;
-	height: 175px;
+	width: 227px;
+	height: 227px;
 	margin: 0;
 	padding: 0;
-	background: background: #1abc9c;
+	background: #0e0b16;
 	overflow: hidden;
 }
-figure img {
-	width:175px;
-	height:175px;
-}
 figure:hover+span {
-	bottom: 0px;
+	bottom: -100px;
 	opacity: 1;
 }
 
+figure img:hover{
+	opacity: 1;
+}
+
+figure img {
+	width:227px;
+	height:227px;
+	opacity: 0.6;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#contact figure{
+	width: 50px;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	background: none;
+	/*background: background: #1abc9c;*/
+	overflow: hidden;
+}
+
+#contact figure img{
+
+	width:50px;
+	height:50px;
+}
 
 /* Zoom In #2 */
 .hover02 figure img {
 	margin-top:0px;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+	/*-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);*/
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
@@ -213,3 +259,9 @@ figure:hover+span {
 	filter: grayscale(0);
 }
 
+.fp-controlArrow.fp-next{
+	border-color: transparent transparent transparent #3CC47C;
+}
+.fp-controlArrow.fp-prev{
+	border-color: transparent #3CC47C transparent transparent ;
+}
