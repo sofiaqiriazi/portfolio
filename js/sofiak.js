@@ -4,7 +4,7 @@ $(function () {
     	in: {
     		effect: 'fadeIn',
 		    delayScale: 5.0,
-		    delay: 10,
+		    delay: 30,
 		    sync: false,
 		    shuffle: false,
 		    reverse: false,

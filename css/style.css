@@ -51,7 +51,7 @@ body{
 	left:0px;
 	width: 100%;
 	margin: 0px 0;
-	background: #0e0b16;
+	background: white;
 	height: 50px;
 
 }
@@ -183,8 +183,8 @@ img {
 #contact div{
 	position:relative;
 	display: inline-block;
-	height:50px;
-	width:50px;
+	height:227px;
+	width:227px;
 	margin: 0 0 0 17px;
 	padding:0;
 }
@@ -199,6 +199,7 @@ img {
 	height: 227px;
 	margin: 0 0 0 17px;
 	padding: 0;
+	border-radius: 50%;
 }
 .boxes .column div span{
 	color:white;
@@ -210,6 +211,7 @@ figure {
 	height: 227px;
 	margin: 0;
 	padding: 0;
+        border-radius: 50%;
 	background: #0e0b16;
 	overflow: hidden;
 }
@@ -219,20 +221,26 @@ figure:hover+span {
 }
 
 figure img:hover{
+
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
 	opacity: 1;
 }
 
 figure img {
 	width:227px;
 	height:227px;
+	border-radius: 50%;
 	opacity: 0.6;
+		-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 
 #contact figure{
-	width: 50px;
-	height: 50px;
+	width: 227px;
+	height: 227px;
 	margin: 0;
 	padding: 0;
 	background: none;
@@ -258,7 +266,6 @@ figure img {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
-
 .fp-controlArrow.fp-next{
 	border-color: transparent transparent transparent #3CC47C;
 }
