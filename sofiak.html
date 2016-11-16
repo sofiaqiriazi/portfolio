@@ -1,143 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-
-<!-- your webpage info goes here -->
-
-    <title>sofia k.</title>
-	
-	<meta name="author" content="your name" />
-	<meta name="description" content="" />
-
-<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
-	<link rel="stylesheet" href="./assets/style.css" type="text/css" />
-
-	<link href="./assets/animate.css" rel="stylesheet"/>
-	<script src="./assets/jquery-3.1.1.min.js"></script>
-	<script src="./assets/jquery.fittext.js"></script>
-	<script src="./assets/jquery.lettering.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-	<script src="jquery.textillate.js"></script>
-	<script src="./js/sofiak.js"></script> 
-	  <link href="./css/style.css" rel="stylesheet"/>
-
+<meta charset="utf-8">
+<title>index.hmtl</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-
-<!-- webpage content goes here in the body -->
-
-	<div id="page">
-		<div id="banner">
-			<div id="logo">
-				<h1><a href="./sofiak.html" id="logoLink"><strong>SOFIA_K</strong></a></h1>
+	<header>
+		<div class="row">
+		<div class="col">
+		<h1 class="style-logo">SOFIA_K</h1>
+		<nav class="style-nav">
+			<ul>
+				<li><a href="./programs.html">Programs</a></li>
+				<li><a href="./tech.html">New_Tech</a></li>
+				<li><a href="./websites.html">Websites</a></li>
+				<li><a href="https://www.linkedin.com/in/sofiaqiriazi"><img src="images/linkedin.png"></a></li>
+				<li><a href="https://github.com/sofiaqiriazi"><img src="images/github.png"></a></li>
+				<li><a href="./imgs/CV.pdf"><img src="images/CV.png"></a></li>
+			</ul>
+		</nav>
+		</div>
+		</div>
+	</header>
+	
+	<main>
+		<div class="row">
+			<div class="col col-md-one-half col-lg-one-fourth">
+				<a href="./programs.html#life">
+				<img src="imgs/gof.jpg" alt="">
+				</a>
+			</div>
+			<div class="col col-md-one-half col-lg-one-fourth">
+				<a href="./programs.html#space">
+				<img src="imgs/editedspace.png" alt="">
+				</a>
+			</div>
+			<div class="col col-md-one-half col-lg-one-fourth">
+				<a href="./programs.html#engine">
+				<img src="imgs/searchengine.jpg" alt="">
+				</a>
+			</div>
+			<div class="col col-md-one-half col-lg-one-fourth">
+				<a href="./programs.html">
+				<img src="imgs/convex_hull.png" alt="">
+				</a>
 			</div>
 		</div>
-		<div id="content">
-			<a href="./programs.html">
-				<div id="NW" class="boxes">
-					<h1 class="tlt"><strong>Programs</strong></h1>
-					<div class="hover02 column" id="progimg">
-						<a href="./programs.html#life">
-						<div>
-							<figure><img src="./img/programs/gameoflife.jpg" /></figure>
-							<span>GAME_OF_LIFE</span>	
-						</div>
-						</a>
-						<a href="./programs.html#space">
-						<div>
-							<figure><img src="./img/programs/spaceship.png" /></figure>
-							<span>SPACESHIP</span>
-						</div>
-						
-						</a>
-						<a href="./programs.html#engine">
-						<div>
-
-							<figure><img src="./img/programs/searchengine.jpg" /></figure>
-							<span>SEARCH_ENGINE</span>
-						
-						</div>
-						</a>
-					</div>
-
-				</div>
-			</a>
-			<a href="./tech.html">
-				<div id="NE" class="boxes">
-					<h1 class="tlt"><strong>New_Tech</strong></h1>
-					<div class="hover02 column" id="progimg">
-						<a href="./tech.html#bci">	
-						<div>
-							<figure><img src="./img/programs/bci.png" /></figure>
-							<span>BRAIN_COMPUTER_GAME</span>
-						</div>
-						</a>
-						<a href="./tech.html#vr">
-						<div>
-							<figure><img src="./img/programs/confybar.png" /></figure>
-							<span>VIRTUAL_REALITY_BAR</span>
-						</div>
-						</a>
-						<a href="./tech.html#avr">
-						<div>
-							<figure><img src="./img/programs/klm.png" /></figure>
-							<span>AUGMENTED_REALITY_TRAINING</span>
-						</div>
-						</a>
-					</div>
-				</div>
-			</a>
-			<a href="./websites.html">
-				<div id="SW" class="boxes">
-					<h1 class="tlt"><strong>Websites</strong></h1>
-					<div class="hover02 column" id="progimg">
-						<a href="./websites.html#unhcr">
-						<div>
-							<figure><img src="./img/programs/unhcr.png" /></figure>
-							<span>3W PROTECTION</span>
-						</div>
-						</a>
-						<a href="./websites.html#lhcb">
-						<div>
-							<figure><img src="./img/programs/lhcb.png" /></figure>
-							<span>LHCb_STATISTICS</span>
-						</div>
-						</a>
-						<a href="./websites.html#house">
-						<div>
-							<figure><img src="./img/programs/warehouse.png" /></figure>
-							<span>WAREHOUSE_MANAGEMENT</span>
-						</div>
-						</a>
-					</div>
-				</div>
-			</a>		
-				<div id="SE" class="boxes">
-					<h1 class="tlt"><strong>Contact_</strong></h1>
-					<div class="hover02 column" id="contact">
-						<div>
-							<a href="https://github.com/sofiaqiriazi">
-							<figure><img src="./img/github.png" /></figure>
-							</a>
-						</div>
-						<div>
-							<a href="https://www.linkedin.com/in/sofiaqiriazi">
-							<figure><img src="./img/linkedin.png"/></figure>
-							</a>
-						</div>
-						<div>
-							<a href="./img/CV.pdf">
-							<figure><img src="./img/cv.png" /></figure>
-							</a>
-						</div>
-					</div>
-				</div>
+		<div class="row">
+			<div class="col col-md-one-half col-lg-one-fourth">
+				<a href="./tech.html#bci">
+				<img src="imgs/bciback.png" alt="">
+				</a>
+			</div>
+			<div class="col col-md-one-half col-lg-one-fourth">
+				<a href="./tech.html">
+				<img src="imgs/alicepre.png" alt="">
+				</a>
+			</div>
+			<div class="col col-md-one-half col-lg-one-fourth">
+				<a href="./tech.html#vr">
+				<img src="imgs/opti.jpg" alt="">
+				</a>
+			</div>
+			<div class="col col-md-one-half col-lg-one-fourth">
+				<a href="./tech.html#avr">
+				<img src="imgs/klm.png" alt="">
+				</a>
+			</div>
 		</div>
-		<div id="footer">
-			<p>
-				Webpage made by <a href="/" target="_blank">Sofia Kyriazi</a>
-			</p>
+		<div class="row">
+			<div class="col col-md-one-half col-lg-one-fourth">
+				<a href="./websites.html">
+				<img src="imgs/doeilogo.png" alt="">
+				</a>
+			</div>
+			<div class="col col-md-one-half col-lg-one-fourth">
+				<a href="./websites.html#lhcb">
+				<img src="imgs/lhcb.png" alt="">
+				</a>
+			</div>
+			<div class="col col-md-one-half col-lg-one-fourth">
+				<a href="./websites.html#unhcr">
+				<img src="imgs/unhcr.png" alt="">
+				</a>
+			</div>
+			<div class="col col-md-one-half col-lg-one-fourth">
+				<a href="./websites.html#house">
+				<img src="imgs/warehouse.png" alt="">
+				</a>
+			</div>
 		</div>
-	</div>
+	</main>
+	
+	<footer>
+		<div class="row">
+			<div class="col">
+				<p class="footer-text">Website By Sofia Kyriazi</p>
+				<p class="footer-text"></p>
+			</div>
+		</div>
+	</footer>
+
+
 </body>
 </html>
