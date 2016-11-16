@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Helvetica Neue, Helvetica, Arial," sans-serif";
+}
+header{
+	padding: 32px;
+}
+
+body{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+img{
+	opacity: 1;
+	width:100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+img:hover{
+	opacity: 0.5;
+	
+}
+
+footer {
+	height:50px;
+	padding: 20px 30px;
+	background-color: #000000;
+}
+.style-logo{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 192px;
+	text-align: center;
+}
+
+.style-nav ul{
+	list-style-type: none;
+}
+
+.style-nav ul li a{
+	text-decoration: none;
+	color: #000000;
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	padding: 8px;
+	font-weight: bolder;
+	font-weight: 100;
+}
+.style-nav ul li a img{
+	width:25px;
+	height:25px;
+}
+.hero{
+	background-image: url(images/gameoflife1.gif);
+	background-size: cover;
+	padding: 20px 20px 50px 20px;
+	color:aliceblue;
+	text-align:center;
+}
+
+h1{
+	font-size: 57px;
+	tetext-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 60px;
+}
+
+h2{
+	font-size: 30px;
+	tetext-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 23px;
+}
+
+h3{
+	font-size: 16px;
+	tetext-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 120px;
+}
+h4{
+	font-size: 16px;
+	font-weight: 200;
+	margin-bottom: 35px;
+}
+
+p{
+	font-size: 16px;
+	tetext-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+.button{
+	border: 2px #FFFFFF solid;
+	padding: 8px 30px;
+	border-radius: 30px;
+	color: #FFFFFFF;
+	text-decoration: none;
+}
+.row:before, .row:after{
+	content:"";
+	display:table;
+}
+
+.row:after {
+	clear:both;
+}
+
+.info-box-tan{
+	background-color: #b9a88e;
+	color:#FFFFFF;
+	padding : 30px 20px 60px;
+	text-align: center;
+}
+.info-box-dark{
+	background-color: #2d2d35;
+	color:#FFFFFF;
+	padding : 30px 20px 60px;
+	text-align: center;
+}
+
+.col {
+	width:100%;
+}
+.footer-text {
+	float:right;
+	color: #FFFFFF;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+/*In tablet view*/
+
+@media (min-width: 768px){
+	body{
+		max-width: 778px;
+	}
+	.style-nav ul{
+		text-align: center;
+		
+	}
+	.style-nav ul li{
+		display: inline-block;
+	}
+	
+	h1{
+		font-size: 40px;
+		margin-bottom: 90px;
+	}
+	.col-md-one-half{
+		width:50%;
+	}
+
+	.col{
+		float:left;
+		padding: 0 7px 14px;
+	}
+	img{
+		height:200px;
+	}
+}
+
+/*Desktop view*/
+
+@media (min-width: 1024px){
+	body{
+		max-width: 1200px;
+	}
+	.style-logo{
+		float:left;
+	}
+	
+	.style-nav{
+		float:right;
+	}
+	
+	.col-lg-one-fourth{
+		width:25%;
+	}
+	img{
+		height:200px;
+	}
+}
