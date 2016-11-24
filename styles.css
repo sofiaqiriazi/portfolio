@@ -16,7 +16,9 @@ body{
 	margin-right:auto;
 }
 
-
+.modal-dialog{
+	width:900px;
+}
 img{
 	opacity: 1;
 	width:100%;
@@ -28,7 +30,9 @@ img:hover{
 	opacity: 0.5;
 	
 }
-
+.imagepreview:hover{
+	opacity: 1;
+}
 footer {
 	height:50px;
 	padding: 20px 30px;
